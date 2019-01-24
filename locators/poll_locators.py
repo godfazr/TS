@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 class PollPageLocators:
 # Submit/continue button
     SUBMIT_BUTTON = By.NAME, 'vote_button'
-    CONTINUE_BUTTON = By.CLASS_NAME, 'ps-result-continue'
+    CONTINUE_BUTTON = By.CLASS_NAME, 'result-continue-button.template_default'
 # Question 1 answer
     RADIO_GROUP_Q1 = By.NAME, 'mqp1_answer_id'
 # Question 2 answer
@@ -25,26 +25,16 @@ class PollPageLocators:
     RATING_RADIO_Q7_ANSWER_C = By.NAME, '268866_mqp2_answer_id[]'
     RATING_RADIO_Q7_ANSWER_D = By.NAME, '268867_mqp2_answer_id[]'
 # Question 8 answers
-    RATING_SELECT_Q8_ANSWER_A = By.ID, 'ps_answer_PSPoll_268860'
-    RATING_SELECT_Q8_ANSWER_B = By.ID, 'ps_answer_PSPoll_268861'
-    RATING_SELECT_Q8_ANSWER_C = By.ID, 'ps_answer_PSPoll_268862'
-    RATING_SELECT_Q8_ANSWER_D = By.ID, 'ps_answer_PSPoll_268863'
+    RATING_SELECT_Q8 = By.NAME, 'mqp3_answer_id[]'
 # Question 9 answers   
-    RATING_SELECT_Q9_ANSWER_A = By.ID, 'ps_answer_PSPoll_268856'
-    RATING_SELECT_Q9_ANSWER_B = By.ID, 'ps_answer_PSPoll_268857'
-    RATING_SELECT_Q9_ANSWER_C = By.ID, 'ps_answer_PSPoll_268858'
-    RATING_SELECT_Q9_ANSWER_D = By.ID, 'ps_answer_PSPoll_268859'
+    RATING_SELECT_Q9 = By.NAME, 'mqp4_answer_id[]'
 # Question 10 answer
-    RANKING_SELECT_Q10_ANSWER_A = By.NAME, 'ans_:268869-1-select'
-    RANKING_SELECT_Q10_ANSWER_B = By.NAME, 'ans_:268870-1-select'
-    RANKING_SELECT_Q10_ANSWER_C = By.NAME, 'ans_:268871-1-select'
-    RANKING_SELECT_Q10_ANSWER_D = By.NAME, 'ans_:268872-1-select'
+    RANKING_SELECT_Q10_LINE_1 = By.ID, 'ans_:268869-1'
+    RANKING_SELECT_Q10_LINE_2 = By.ID, 'ans_:268870-1'
 # Question 11 answer
-    RANKING_SELECT_Q11_ANSWER_A = By.NAME, 'ans_:268873-1-select'
-    RANKING_SELECT_Q11_ANSWER_B = By.NAME, 'ans_:268874-1-select'
-    RANKING_SELECT_Q11_ANSWER_C = By.NAME, 'ans_:268875-1-select'
-    RANKING_SELECT_Q11_ANSWER_D = By.NAME, 'ans_:268876-1-select'
+    RANKING_SELECT_Q11_LINE_1 = By.ID, 'ans_:268873-1'
+    RANKING_SELECT_Q11_LINE_2 = By.ID, 'ans_:268874-1'
 # Question 12 answer
     TEXT_INPUT_Q12 = By.NAME, 'mqp2_freeTextAnswer'
 # Last page with acknowledgement
-    ACKNOWLEDGEMENT = By.NAME, 'ps-acknowledgement'
+    ACKNOWLEDGEMENT = By.CLASS_NAME, 'ps-acknowledgement'
