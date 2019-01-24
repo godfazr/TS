@@ -3,7 +3,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.action_chains import ActionChains as actions
-# from locators.poll_locators import PollPageLocators
 
 class PollPage:
 #    def __init__(self):
