@@ -5,9 +5,6 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.action_chains import ActionChains as actions
 
 class PollPage:
-#    def __init__(self):
-
-
 
 # Poll url
     @property
