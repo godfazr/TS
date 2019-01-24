@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 class PollPageLocators:
 # Submit/continue button
     SUBMIT_BUTTON = By.NAME, 'vote_button'
-    CONTINUE_BUTTON = By.CLASS_NAME, 'result-continue-button.template_default'
+    CONTINUE_BUTTON = By.CLASS_NAME, 'ps-result-continue'
 # Question 1 answer
     RADIO_GROUP_Q1 = By.NAME, 'mqp1_answer_id'
 # Question 2 answer
